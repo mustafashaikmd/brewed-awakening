@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewed Awakening</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <div class="logo"><a href="#"><img src="images/logo.png" alt="Brewed Awakening Logo">Brewed Awakening</a></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order Online</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <video src="videos/intro.mp4" autoplay muted loop playsinline></video>
+      <h1>Welcome to Brewed Awakening</h1>
+      <p>Start your day with the perfect cup of coffee.</p>
+      <a href="#menu" class="cta-button">Explore Our Menu</a>
+    </div>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Brewed Awakening is a cozy coffee shop dedicated to serving the finest coffee and breakfast items. Our mission is to provide a warm and welcoming environment where you can start your day right. Established in 2020, we take pride in sourcing our beans from sustainable farms and crafting each cup with care.</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </div>
+      <div class="about-image">
+        <img src="images/cafe-interior.png" alt="Cafe Interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <!-- Coffee Items -->
+      <article class="menu-item">
+        <img src="images/espresso.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>A strong shot of coffee, perfect for a quick pick-me-up.</p>
+        <p class="price">₹109</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/latte.jpg" alt="Latte">
+        <h3>Latte</h3>
+        <p>Espresso with steamed milk and a light layer of foam.</p>
+        <p class="price">₹139</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/cappuccino.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p>Espresso with equal parts steamed milk and foam.</p>
+        <p class="price">₹149</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/macchiato.jpg" alt="Macchiato">
+        <h3>Macchiato</h3>
+        <p>Macchiato is an espresso coffee drink with a small amount of milk, usually foamed.</p>
+        <p class="price">₹149</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/americano.jpeg" alt="Americano">
+        <h3>Americano</h3>
+        <p>Americano is a type of coffee drink prepared by diluting an espresso shot that retains the complex flavors of espresso.</p>
+        <p class="price">₹159</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/iced-coffee.jpg" alt="Iced-coffee">
+        <h3>Iced coffee</h3>
+        <p>Iced coffee is a coffee beverage served cold prepared either by brewing coffee normally and then serving it over ice or in cold milk.</p>
+        <p class="price">₹119</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/black-coffee.jpg" alt="black-coffee">
+        <h3>Black Coffee</h3>
+        <p>The classic black coffee is made from ground coffee beans soaked in water and served hot. </p>
+        <p class="price">₹149</p>
+      </article>
+      <!-- Breakfast Items -->
+      <article class="menu-item">
+        <img src="images/sandwich.jpg" alt="Breakfast Sandwich">
+        <h3>Breakfast Sandwich</h3>
+        <p>A hearty sandwich with egg, cheese, and your choice of bacon or sausage.</p>
+        <p class="price">₹89</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/pancakes.jpg" alt="Pancakes">
+        <h3>Pancakes</h3>
+        <p>Fluffy pancakes served with maple syrup and butter.</p>
+        <p class="price">₹79</p>
+      </article>
+      <article class="menu-item">
+        <img src="images/yogurt.jpg" alt="Yogurt Parfait">
+        <h3>Yogurt Parfait</h3>
+        <p>Layered yogurt with granola and fresh berries.</p>
+        <p class="price">₹99</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Online Ordering Section -->
+<section id="order" class="order-section">
+    <h2>Order Online</h2>
+    <div class="order-content">
+      <form id="order-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="order-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="order-phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="items">Select Items:</label>
+          <select id="order-items" name="items" multiple required>
+            <option value="espresso">Espresso - ₹109</option>
+            <option value="latte">Latte - ₹139</option>
+            <option value="cappuccino">Cappuccino - ₹149</option>
+            <option value="macchiato">Macchiato - ₹149</option>
+            <option value="americano">Americano - ₹159</option>
+            <option value="iced-coffee">Iced Coffee - ₹119</option>
+            <option value="black-coffee">Black Coffee - ₹149</option>
+            <option value="sandwich">Breakfast Sandwich - ₹89</option>
+            <option value="pancakes">Pancakes - ₹79</option>
+            <option value="yogurt">Yogurt Parfait - ₹99</option>
+          </select>
+          <small>Hold Ctrl (Windows) or Command (Mac) to select multiple items.</small>
+        </div>
+        <div class="form-group">
+          <label for="instructions">Special Instructions:</label>
+          <textarea id="order-instructions" name="instructions" rows="4"></textarea>
+        </div>
+        <button type="submit" class="cta-button">Place Order</button>
+      </form>
+      <div class="order-summary">
+        <h3>Your Order</h3>
+        <ul id="order-summary-list"></ul>
+        <p>Total: <span id="order-total">₹0.00</span></p>
+      </div>
+    </div>
+  </section>
+
+<!-- Coffee Quiz Section -->
+<section id="quiz" class="quiz-section">
+    <h2>Discover Your Perfect Coffee</h2>
+    <div class="quiz-content">
+      <form id="coffee-quiz">
+        <div class="quiz-question">
+          <p>1. How do you like your coffee?</p>
+          <label><input type="radio" name="q1" value="strong"> Strong and bold</label>
+          <label><input type="radio" name="q1" value="smooth"> Smooth and creamy</label>
+          <label><input type="radio" name="q1" value="sweet"> Sweet and flavored</label>
+        </div>
+        <div class="quiz-question">
+          <p>2. When do you usually drink coffee?</p>
+          <label><input type="radio" name="q2" value="morning"> Morning</label>
+          <label><input type="radio" name="q2" value="afternoon"> Afternoon</label>
+          <label><input type="radio" name="q2" value="evening"> Evening</label>
+        </div>
+        <button type="submit" class="cta-button">Get My Coffee</button>
+      </form>
+      <div id="quiz-result" class="quiz-result"></div>
+    </div>
+  </section>
+  
+  <!-- Special Offers Banner -->
+  <section class="offers-section">
+    <div class="offers-banner">
+      <p>✨ Today's Special: Buy 1 Get 1 Free on All Lattes! ✨</p>
+    </div>
+  </section>
+  
+  <!-- Loyalty Program Section -->
+  <section id="loyalty" class="loyalty-section">
+    <h2>Join Our Loyalty Program</h2>
+    <div class="loyalty-content">
+      <p>Earn points with every purchase and get exclusive rewards!</p>
+      <form id="loyalty-form">
+        <input type="email" id="loyalty-email" placeholder="Enter your email" required>
+        <button type="submit" class="cta-button">Sign Up</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Event Booking Section -->
+  <section id="events" class="events-section">
+    <h2>Book Us for Your Event</h2>
+    <div class="events-content">
+      <p>Host your private events at Brewed Awakening. Fill out the form below, and we'll get back to you!</p>
+      <form id="event-form">
+        <div class="form-group">
+          <label for="event-name">Name:</label>
+          <input type="text" id="event-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="event-email">Email:</label>
+          <input type="email" id="event-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="event-date">Event Date:</label>
+          <input type="date" id="event-date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="event-guests">Number of Guests:</label>
+          <input type="number" id="event-guests" name="guests" required>
+        </div>
+        <button type="submit" class="cta-button">Submit Request</button>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Dark Mode Toggle -->
+  <button id="dark-mode-toggle" class="dark-mode-toggle">
+    <i class="fas fa-moon"></i> Dark Mode
+  </button>
+  
+  <!-- Live Chat Widget -->
+  <div class="chat-widget">
+    <div class="chat-header">
+      <p>Need help? Chat with us!</p>
+      <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-body">
+      <p>Hi there! How can we assist you today?</p>
+      <input type="text" id="chat-input" placeholder="Type your message...">
+    </div>
+  </div>
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>"The best coffee in town! I come here every morning before work."</p>
+        <p class="author">- Sarah L.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Amazing atmosphere and delicious food. Highly recommend!"</p>
+        <p class="author">- John D.</p>
+      </div>
+      <div class="testimonial">
+        <p>"Friendly staff and the perfect latte. A must-visit spot!"</p>
+        <p class="author">- Will Smith</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-content">
+      <!-- Contact Form -->
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+  
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="info" class="map">
+    
+      <!-- Visit Us & Find Us (Map) Section -->
+      <div class="info-map-container">
+        <!-- Visit Us Section -->
+        <div class="contact-info">
+          <h2>Visit Us</h2>
+          <p>Near Jntu Metro Station, Hyderabad</p>
+          <h3>Opening Hours</h3>
+          <p>Mon-Fri: 7 AM - 7 PM<br>Sat-Sun: 8 AM - 6 PM</p>
+          <h3>Follow Us</h3>
+          <div class="social-li+nks">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          
+         
+        </div>
+        
+        <div class="map-content">
+          <h2>Find Us</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1986078112004!2d78.38741457493744!3d17.498030183408165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1738695729432!5m2!1sen!2sin" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 ☕Brewed Awakening. All rights reserved.</p>
+  </footer>
+  <script>
+  document.getElementById('order-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('order-name').value;
+    const phone = document.getElementById('order-phone').value;
+    const items = Array.from(document.getElementById('order-items').selectedOptions).map(option => option.text);
+    const instructions = document.getElementById('order-instructions').value;
+
+    // Calculate total
+    const prices = {
+      "Espresso - ₹109": 109,
+      "Latte - ₹139": 139,
+      "Cappuccino - ₹149": 149,
+      "Macchiato - ₹149": 149,
+      "Americano - ₹159": 159,
+      "Iced Coffee - ₹119": 119,
+      "Black Coffee - ₹149": 149,
+      "Breakfast Sandwich - ₹89": 89,
+      "Pancakes - ₹79": 79,
+      "Yogurt Parfait - ₹99": 99,
+    };
+
+    let total = 0;
+    items.forEach(item => {
+      total += prices[item];
+    });
+
+    // Update order summary
+    const orderSummaryList = document.getElementById('order-summary-list');
+    orderSummaryList.innerHTML = items.map(item => `<li>${item}</li>`).join('');
+    document.getElementById('order-total').textContent = `₹${total.toFixed(2)}`;
+
+    // Show confirmation message
+    alert(`Thank you, ${name}! Your order has been placed. We will contact you at ${phone} for confirmation.`);
+  });
+
+  // Coffee Quiz
+  document.getElementById('coffee-quiz').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const q1 = document.querySelector('input[name="q1"]:checked').value;
+    const q2 = document.querySelector('input[name="q2"]:checked').value;
+    let result = '';
+
+    if (q1 === 'strong' && q2 === 'morning') {
+      result = 'You should try our Espresso!';
+    } else if (q1 === 'smooth' && q2 === 'afternoon') {
+      result = 'A Latte is perfect for you!';
+    } else {
+      result = 'Our Cappuccino is a great choice!';
+    }
+
+    document.getElementById('quiz-result').textContent = result;
+  });
+
+  // Dark Mode Toggle
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  darkModeToggle.addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    darkModeToggle.innerHTML = document.body.classList.contains('dark-mode')
+      ? '<i class="fas fa-sun"></i> Light Mode'
+      : '<i class="fas fa-moon"></i> Dark Mode';
+  });
+
+  // Live Chat Widget
+  const chatWidget = document.querySelector('.chat-widget');
+  const chatClose = document.getElementById('chat-close');
+  chatClose.addEventListener('click', function () {
+    chatWidget.style.display = 'none';
+  });
+
+  setTimeout(() => {
+    chatWidget.style.display = 'block';
+  }, 5000);
+  </script>
+</body>
+</html>
