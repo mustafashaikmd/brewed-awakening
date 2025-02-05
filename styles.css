@@ -666,3 +666,42 @@ footer {
     flex-direction: column;
   }
 }
+
+
+@media (max-width: 425px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about-content, .contact-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 320px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about-content, .contact-content {
+    flex-direction: column;
+  }
+}
